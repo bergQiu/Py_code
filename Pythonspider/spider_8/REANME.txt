@@ -1,0 +1,5 @@
+采用Phantomjs + Python + Selenium 架构，爬取动态网页
+
+Phantomjs 负责渲染解析Javascript】
+Selenium 负责驱动浏览器和Python对接】
+Python负责后期处理】

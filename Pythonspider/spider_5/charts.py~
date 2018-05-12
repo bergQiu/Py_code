@@ -1,0 +1,11 @@
+# -*- coding:utf-8 -*-
+
+from pyecharts import Bar
+import json
+
+if __name__ == '__main__':
+	fs = open('result.json',encoding = 'utf-8')
+	data = json.load(fs)
+	for kay in data:
+		print('%s---%s'%(key,data['key']))
+	print (data)

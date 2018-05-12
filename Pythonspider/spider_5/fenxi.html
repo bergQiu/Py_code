@@ -1,0 +1,4048 @@
+G:\python\python.exe "C:/Users/QZL/Desktop/Pythons pider/spider_5/spiderManager.py"
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>全体院士名单----中国科学院学部与院士</title>
+<link rel="stylesheet" type="text/css" href="http://www.casad.cas.cn:80/template/lib/css/css.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.casad.cas.cn:80/template/lib/css/other.css"/>
+<script type="text/javascript" src="http://www.casad.cas.cn:80/lib/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="http://www.casad.cas.cn:80/template/lib/js/simplefoucs.js"></script>
+</head>
+<body>
+<div class="mainBar">
+
+
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+      <div class="toolBar">
+      <div class="time">
+      <SCRIPT language=JavaScript>
+            today=new Date();
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            var seconds = today.getSeconds();
+            function initArray(){
+            this.length=initArray.arguments.length
+            for(var i=0;i<this.length;i++)
+            this[i+1]=initArray.arguments[i] }
+            var d=new initArray("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+            document.write(today.getFullYear(),"年",today.getMonth()+1,"月",today.getDate(),"日 ",d[today.getDay()+1]," ");
+            </SCRIPT>
+        </div>
+        <div class="old">
+            <div class="aun" style="width: 60px;"></div>
+            <div class="aun" style="margin-left:10px;"><a href="http://www.cas.cn/" target="_blank">中国科学院</a></div>
+            <div class="en123" style="background-color:#1e90ff; margin-top:8px; margin-left:15px;"><a href="http://english.casad.cas.cn/" target="_blank">English</a></div>
+        </div>
+    </div>
+    <!--toolBar end-->
+
+    <div id="slider-wrap">
+
+        <div class="top123">
+        <div><img src="http://www.casad.cas.cn:80/template/lib/images/banner2_blue.jpg" /></div>
+        <div><img src="http://www.casad.cas.cn:80/template/lib/images/banner_blue.jpg" /></div>
+    </div>
+    </div>
+    <!--banner end-->
+    <div class="menuBar">
+      <div class="navBar" id="nav">
+          <ul class="agree">
+              <li>
+              <a href="http://www.casad.cas.cn:80/"  >首页</a></li>
+                <li><a href="http://www.casad.cas.cn:80/chnl/294/index.html" >学部介绍</a>
+                  <ul class="intrOne">
+
+                	  <li><a href="http://www.casad.cas.cn:80/chnl/295/index.html">学部简介</a></li>
+
+                	  <li><a href="http://www.casad.cas.cn:80/chnl/296/index.html">组织机构</a></li>
+
+                	  <li><a href="http://www.casad.cas.cn:80/chnl/305/index.html">规章制度</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="http://www.casad.cas.cn:80/chnl/313/index.html" class="current">院士信息</a>
+                  <ul class="intr">
+
+                        <li><a href="http://www.casad.cas.cn:80/chnl/314/index.html">院士名单与简介</a></li>
+
+                        <li><a href="http://www.casad.cas.cn:80/chnl/315/index.html">外籍院士名单与简介</a></li>
+
+                        <li><a href="http://www.casad.cas.cn:80/chnl/316/index.html">已故院士名单</a></li>
+
+                        <li><a href="http://www.casad.cas.cn:80/chnl/317/index.html">已故外籍院士名单</a></li>
+
+                        <li><a href="http://www.casad.cas.cn:80/chnl/318/index.html">相关统计</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="http://www.casad.cas.cn:80/chnl/319/index.html" >院士大会</a>
+                  <ul class="assembly">
+
+                        <li><a href="http://www.casad.cas.cn:80/chnl/320/index.html" >简介</a></li>
+
+                        <li><a href="http://www.casad.cas.cn:80/chnl/321/index.html"  target="_blank">2016年第十八次院士大会</a></li>
+
+                      <li>&nbsp;</li>
+                      <li><a href="http://www.casad.cas.cn:80/chnl/322/index.html" target="_blank">2014年第十七次院士大会</a></li>
+                      <li><a href="http://www.cas.cn/zt/hyzt/ysdh17th/ljhg/" target="_blank">更多</a></li>
+                      <li><a href="http://www.casad.cas.cn:80/chnl/323/index.html" target="_blank">2012年第十六次院士大会</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://www.casad.cas.cn:80/chnl/324/index.html" >院士增选</a>
+                  <ul class="bureau" style="width:300px; left:-250px; padding-right: 10px;">
+
+                        <li style="width: 140px;" ><a href="http://www.casad.cas.cn:80/chnl/325/index.html">简介</a></li>
+
+                        <li style="width: 140px;" ><a href="http://www.casad.cas.cn:80/chnl/424/index.html">2017年院士增选</a></li>
+
+                        <li style="width: 140px;" ><a href="http://www.casad.cas.cn:80/chnl/326/index.html">2015年院士增选</a></li>
+
+                        <li style="width: 140px;" ><a href="http://www.casad.cas.cn:80/chnl/327/index.html">历次当选院士名单</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="http://www.casad.cas.cn:80/chnl/328/index.html" >智库建设</a>
+                  <ul class="tankGuide">
+
+                        <li>
+                        <a href="http://www.casad.cas.cn:80/chnl/329/index.html"  >决策咨询</a></li>
+
+                        <li>
+                        <a href="http://www.casad.cas.cn:80/chnl/332/index.html"  target="_blank" >学术引领</a></li>
+
+                        <li>
+                        <a href="http://www.casad.cas.cn:80/chnl/338/index.html"  >科学文化传播</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="http://www.casad.cas.cn:80/chnl/404/index.html" >出版物</a>
+                  <ul class="intrOne" style="left: -350px; width:410px; padding-right:0px;">
+
+                        <li style="width: 136px;"><a style="width: 136px;" href="http://www.casad.cas.cn:80/chnl/405/index.html" >决策咨询系列</a></li>
+
+
+                        <li style="width: 136px;"><a style="width: 136px;" href="http://www.casad.cas.cn:80/chnl/406/index.html"  target="_blank">学术引领系列</a></li>
+
+
+                        <li style="width: 136px;"><a style="width: 136px;" href="http://www.casad.cas.cn:80/chnl/407/index.html" >科学文化系列</a></li>
+
+
+                        <li style="width: 136px;"><a style="width: 136px;" href="http://www.casad.cas.cn:80/chnl/337/index.html" >《中国科学》</a></li>
+
+
+                        <li style="width: 136px;"><a style="width: 136px;" href="http://www.casad.cas.cn:80/chnl/400/index.html" >《科学通报》</a></li>
+
+                        <li></li>
+
+
+                        <li style="width: 136px;"><a style="width: 136px;" href="http://www.casad.cas.cn:80/chnl/342/index.html"  target="_blank">《科学与社会》</a></li>
+
+
+                    </ul>
+                </li>
+                <li><a href="http://www.casad.cas.cn:80/chnl/344/index.html" >学部工作局</a>
+                  <ul class="bureau" style="width:210px; left: -180px;">
+
+                        <li style="width:90px; margin-left:10px;"><a href="http://www.casad.cas.cn:80/chnl/345/index.html">职能介绍</a></li>
+
+                        <li style="width:90px; margin-left:10px;"><a href="http://www.casad.cas.cn:80/chnl/346/index.html">领导班子</a></li>
+
+                        <li style="width:90px; margin-left:10px;"><a href="http://www.casad.cas.cn:80/chnl/347/index.html">处室设置</a></li>
+
+                        <li style="width:90px; margin-left:10px;"><a href="http://www.casad.cas.cn:80/chnl/348/index.html">联系我们</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <form id="searchform" action="http://www.casad.cas.cn:80/search/index.html" method="get">
+        <div class="searchBar">
+            <input name="sw" id="sw" type="text" placeholder="请输入检索词" class="fl" />
+            <input type="button" id="search" title="搜索" class="fl" />
+        </div>
+        </form>
+    </div>
+    <!--menuBar end-->
+<script>
+$(function(){
+	$("#search").click(function(){
+		$("#sw").val($.trim($("#sw").val()));
+	    if($("#sw").val() != "" && $("#sw").val() != "请输入关键字" && $("#sw").val() != "请输入检索词"){
+	      $("#searchform").submit();
+	    }else {
+	      alert("请输入检索词");
+	    }
+	});
+});
+</script>
+    <div class="currBar">
+      <font color="#575757">您现在的位置：</font>
+        <a href="http://www.casad.cas.cn:80/">首页</a>&nbsp;>&nbsp;
+
+        <a href="http://www.casad.cas.cn:80/chnl/313/index.html">院士信息</a>&nbsp;>&nbsp;
+        <a href="http://www.casad.cas.cn:80/chnl/314/index.html">院士名单与简介</a>&nbsp;>&nbsp;
+        <a href="http://www.casad.cas.cn:80/chnl/371/index.html">全体院士名单</a>
+    </div>
+    <!--currBar end-->
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+
+<div class="intrNavBar">
+      <div class="title">院士信息</div>
+        <div class="navSub" basepath="http://www.casad.cas.cn:80/">
+
+
+
+
+
+
+
+
+
+
+
+          <div class="subNav currentDd">
+          院士名单与简介</div>
+            <ul class="navContent" style="display:block;">
+
+
+
+              <li><a href="javascript:void(0);" class="cur"  >全体院士名单</a></li>
+
+
+
+
+
+              <li><a href="http://www.casad.cas.cn:80/chnl/372/index.html"  >数学物理学部</a></li>
+
+
+
+
+              <li><a href="http://www.casad.cas.cn:80/chnl/373/index.html"  >化学部</a></li>
+
+
+
+
+              <li><a href="http://www.casad.cas.cn:80/chnl/374/index.html"  >生命科学和医学学部</a></li>
+
+
+
+
+              <li><a href="http://www.casad.cas.cn:80/chnl/375/index.html"  >地学部</a></li>
+
+
+
+
+              <li><a href="http://www.casad.cas.cn:80/chnl/376/index.html"  >信息技术科学部</a></li>
+
+
+
+
+              <li><a href="http://www.casad.cas.cn:80/chnl/377/index.html"  >技术科学部</a></li>
+
+
+            </ul>
+
+
+
+
+
+
+          <div class="currentDn">
+          <a href="http://www.casad.cas.cn:80/chnl/315/index.html"  >外籍院士名单与简介</a></div>
+
+
+
+
+
+
+          <div class="currentDn">
+          <a href="http://www.casad.cas.cn:80/chnl/316/index.html"  >已故院士名单</a></div>
+
+
+
+
+
+
+          <div class="currentDn">
+          <a href="http://www.casad.cas.cn:80/chnl/317/index.html"  >已故外籍院士名单</a></div>
+
+
+
+
+
+
+
+
+
+
+          <div class="subNav" chnlid="318">
+          相关统计</div>
+
+
+
+
+
+        </div>
+        <div class="navBack"></div>
+    </div>
+    <!--intrNavBar end-->
+
+    <div class="allNameBar">
+        <div class="contentTest" id="zoom">
+            <dl id="allNameBar">
+              <div class="title">
+            <h1>全体院士名单<span style="font-weight: normal; font-size: 14px; ">（共799人）</span></h1>
+
+            <h2>&nbsp;</h2>
+            <div class="incidental">
+
+                <div class="incSize">【字号：<a href="javascript:doZoom(12)">小</a>&nbsp;&nbsp;<a href="javascript:doZoom(14)">中</a>&nbsp;&nbsp;<a href="javascript:doZoom(16)">大</a>】</div>
+            </div>
+        </div>
+
+                <dt>数学物理学部<em>（154人）</em></dt>
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090626_1854608.html" target="_blank">艾国祥</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792084.html" target="_blank">白以龙</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201711-t20171129_4625036.html" target="_blank">蔡荣根</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792083.html" target="_blank">陈彪</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792082.html" target="_blank">陈和生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792081.html" target="_blank">陈佳洱</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792080.html" target="_blank">陈建生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792079.html" target="_blank">陈木法</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792078.html" target="_blank">陈难先</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201312-t20131219_4001984.html" target="_blank">陈十一</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792077.html" target="_blank">陈式刚</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201312-t20131219_4001983.html" target="_blank">陈恕行</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201512-t20151224_4502106.html" target="_blank">陈仙辉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201112-t20111213_3412299.html" target="_blank">陈永川</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201711-t20171129_4625038.html" target="_blank">陈志明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792076.html" target="_blank">程开甲</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200912-t20091203_2681357.html" target="_blank">崔向群</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792074.html" target="_blank">戴元本</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201512-t20151224_4502077.html" target="_blank">邓小刚</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201512-t20151224_4502100.html" target="_blank">杜江峰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201112-t20111213_3412298.html" target="_blank">鄂维南</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792071.html" target="_blank">范海福</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792070.html" target="_blank">方成</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201711-t20171129_4625040.html" target="_blank">方复全</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792069.html" target="_blank">方守贤</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792068.html" target="_blank">冯端</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792067.html" target="_blank">甘子钊</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201112-t20111213_3412297.html" target="_blank">高鸿钧</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792066.html" target="_blank">葛墨林</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792065.html" target="_blank">龚昌德</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201711-t20171129_4625041.html" target="_blank">龚新高</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792063.html" target="_blank">郭柏灵</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792062.html" target="_blank">郭尚平</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201711-t20171129_4625042.html" target="_blank">韩占文</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792061.html" target="_blank">郝柏林</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201711-t20171129_4625043.html" target="_blank">何国威</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792059.html" target="_blank">何祚庥</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792058.html" target="_blank">贺贤土</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792057.html" target="_blank">洪朝生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792056.html" target="_blank">洪家兴</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792055.html" target="_blank">胡和生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792054.html" target="_blank">胡仁宇</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792051.html" target="_blank">霍裕平</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201512-t20151224_4502089.html" target="_blank">江松</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792050.html" target="_blank">姜伯驹</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792049.html" target="_blank">解思深</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201512-t20151224_4502110.html" target="_blank">景益鹏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792047.html" target="_blank">邝宇平</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200912-t20091203_2681353.html" target="_blank">李安民</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792046.html" target="_blank">李邦河</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792045.html" target="_blank">李大潜</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792044.html" target="_blank">李德平</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792043.html" target="_blank">李方华</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792042.html" target="_blank">李家春</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792041.html" target="_blank">李家明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201711-t20171129_4625044.html" target="_blank">李儒新</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792040.html" target="_blank">李惕碚</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201312-t20131219_4001986.html" target="_blank">励建书</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792037.html" target="_blank">林群</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792035.html" target="_blank">龙以明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200912-t20091203_2681354.html" target="_blank">罗俊</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201512-t20151224_4502108.html" target="_blank">罗民兴</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792032.html" target="_blank">吕敏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201711-t20171129_4625035.html" target="_blank">马余刚</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792030.html" target="_blank">马志明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792029.html" target="_blank">闵乃本</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201512-t20151224_4502109.html" target="_blank">莫毅明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201312-t20131219_4001982.html" target="_blank">欧阳颀</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792028.html" target="_blank">欧阳钟灿</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201112-t20111213_3412296.html" target="_blank">潘建伟</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792026.html" target="_blank">彭实戈</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792023.html" target="_blank">曲钦岳</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792022.html" target="_blank">沈文庆</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792021.html" target="_blank">沈学础</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792020.html" target="_blank">石钟慈</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792019.html" target="_blank">苏定强</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792018.html" target="_blank">苏肇冰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200912-t20091203_2681352.html" target="_blank">孙昌璞</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201312-t20131219_4001988.html" target="_blank">孙鑫</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792017.html" target="_blank">孙义燧</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792016.html" target="_blank">汤定元</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201711-t20171129_4625045.html" target="_blank">汤涛</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792015.html" target="_blank">唐孝威</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792014.html" target="_blank">陶瑞宝</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792013.html" target="_blank">田刚</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792012.html" target="_blank">童秉纲</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792011.html" target="_blank">万哲先</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792010.html" target="_blank">汪承灏</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201312-t20131219_4001985.html" target="_blank">汪景琇</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792009.html" target="_blank">王鼎盛</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792007.html" target="_blank">王恩哥</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201112-t20111213_3412295.html" target="_blank">王广厚</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792006.html" target="_blank">王乃彦</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792005.html" target="_blank">王诗宬</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792004.html" target="_blank">王世绩</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792003.html" target="_blank">王绶琯</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201711-t20171129_4625046.html" target="_blank">王小云</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792002.html" target="_blank">王迅</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792001.html" target="_blank">王业宁</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201512-t20151224_4502070.html" target="_blank">王贻芳</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1792000.html" target="_blank">王元</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791999.html" target="_blank">王梓坤</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791998.html" target="_blank">魏宝文</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791996.html" target="_blank">文兰</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791994.html" target="_blank">吴岳良</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201112-t20111213_3412294.html" target="_blank">武向平</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200912-t20091203_2681356.html" target="_blank">席南华</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791993.html" target="_blank">夏道行</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201312-t20131219_4001989.html" target="_blank">向涛</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201512-t20151224_4502111.html" target="_blank">谢心澄</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791990.html" target="_blank">邢定钰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791989.html" target="_blank">熊大闰</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201711-t20171129_4625048.html" target="_blank">徐红星</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791988.html" target="_blank">徐叙瑢</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791987.html" target="_blank">徐至展</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791986.html" target="_blank">严加安</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791985.html" target="_blank">杨福家</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791984.html" target="_blank">杨国桢</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791983.html" target="_blank">杨乐</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791982.html" target="_blank">杨应昌</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1808811.html" target="_blank">杨振宁</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791981.html" target="_blank">叶朝辉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791980.html" target="_blank">叶叔华</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791978.html" target="_blank">于渌</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791977.html" target="_blank">于敏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201112-t20111213_3412293.html" target="_blank">袁亚湘</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791975.html" target="_blank">詹文龙</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791974.html" target="_blank">张殿琳</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791973.html" target="_blank">张恭庆</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791972.html" target="_blank">张涵信</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791971.html" target="_blank">张焕乔</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791969.html" target="_blank">张杰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201512-t20151224_4502104.html" target="_blank">张平文</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791968.html" target="_blank">张仁和</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791967.html" target="_blank">张淑仪</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201112-t20111213_3412292.html" target="_blank">张维岩</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791966.html" target="_blank">张伟平</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791965.html" target="_blank">张裕恒</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201112-t20111213_3412357.html" target="_blank">张肇西</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791964.html" target="_blank">张宗烨</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791963.html" target="_blank">章综</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791962.html" target="_blank">赵光达</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201312-t20131219_4001980.html" target="_blank">赵政国</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791961.html" target="_blank">赵忠贤</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791960.html" target="_blank">郑厚植</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200912-t20091203_2681355.html" target="_blank">郑晓静</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791959.html" target="_blank">周光召</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791958.html" target="_blank">周恒</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201312-t20131219_4001981.html" target="_blank">周向宇</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791957.html" target="_blank">周又元</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791956.html" target="_blank">周毓麟</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791955.html" target="_blank">朱邦芬</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-201512-t20151224_4502085.html" target="_blank">朱诗尧</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/sxwlxb-200906-t20090624_1791952.html" target="_blank">邹广田</a></span>
+
+
+
+                <dt>化学部<em>（127人）</em></dt>
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201512-t20151224_4502117.html" target="_blank">安立佳</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802366.html" target="_blank">白春礼</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200912-t20091203_2681360.html" target="_blank">包信和</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802360.html" target="_blank">曹镛</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802357.html" target="_blank">查全性</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802354.html" target="_blank">柴之芳</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802348.html" target="_blank">陈洪渊</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802345.html" target="_blank">陈家镛</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201711-t20171129_4625049.html" target="_blank">陈军</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802342.html" target="_blank">陈俊武</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802339.html" target="_blank">陈凯先</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802336.html" target="_blank">陈庆云</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200912-t20091203_2681363.html" target="_blank">陈小明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802330.html" target="_blank">陈新滋</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802327.html" target="_blank">陈懿</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802324.html" target="_blank">程津培</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802321.html" target="_blank">程镕时</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802318.html" target="_blank">戴立信</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201312-t20131219_4002001.html" target="_blank">丁奎岭</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802315.html" target="_blank">段雪</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201312-t20131219_4002000.html" target="_blank">方维海</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802312.html" target="_blank">费维扬</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802309.html" target="_blank">冯守华</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201312-t20131219_4001999.html" target="_blank">冯小明</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802303.html" target="_blank">高松</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802300.html" target="_blank">郭景坤</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201711-t20171129_4625050.html" target="_blank">郭子建</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201312-t20131219_4001994.html" target="_blank">韩布兴</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802294.html" target="_blank">何国钟</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802291.html" target="_blank">何鸣元</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802288.html" target="_blank">洪茂椿</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802285.html" target="_blank">侯建国</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802279.html" target="_blank">胡英</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802276.html" target="_blank">黄本立</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802273.html" target="_blank">黄春辉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802267.html" target="_blank">黄乃正</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802252.html" target="_blank">计亮年</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200912-t20091203_2681362.html" target="_blank">江桂斌</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200912-t20091203_2681361.html" target="_blank">江雷</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802249.html" target="_blank">江龙</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802246.html" target="_blank">江明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802237.html" target="_blank">黎乐民</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802234.html" target="_blank">李灿</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802231.html" target="_blank">李洪钟</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802228.html" target="_blank">李静海</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201112-t20111213_3412358.html" target="_blank">李亚栋</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201312-t20131219_4001998.html" target="_blank">李永舫</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201512-t20151224_4502121.html" target="_blank">李玉良</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802225.html" target="_blank">梁敬魁</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802220.html" target="_blank">林国强</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802214.html" target="_blank">刘若庄</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802208.html" target="_blank">刘元方</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201512-t20151224_4502116.html" target="_blank">刘云圻</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201112-t20111213_3412359.html" target="_blank">刘忠范</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802197.html" target="_blank">陆熙炎</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802194.html" target="_blank">麻生明</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802191.html" target="_blank">麦松威</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802185.html" target="_blank">倪嘉缵</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201711-t20171129_4625052.html" target="_blank">彭孝军</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802179.html" target="_blank">钱逸泰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802176.html" target="_blank">任詠华</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802173.html" target="_blank">沙国河</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802167.html" target="_blank">沈家骢</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802161.html" target="_blank">沈之荃</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802158.html" target="_blank">宋礼成</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201512-t20151224_4502119.html" target="_blank">孙世刚</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201512-t20151224_4502127.html" target="_blank">谭蔚泓</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200912-t20091203_2681365.html" target="_blank">唐本忠</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201512-t20151224_4502126.html" target="_blank">唐勇</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802149.html" target="_blank">唐有祺</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201112-t20111213_3412360.html" target="_blank">田禾</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802146.html" target="_blank">田昭武</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802143.html" target="_blank">田中群</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802140.html" target="_blank">佟振合</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200912-t20091203_2681366.html" target="_blank">涂永强</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802137.html" target="_blank">万惠霖</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200912-t20091203_2681359.html" target="_blank">万立骏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802133.html" target="_blank">汪尔康</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802127.html" target="_blank">王方定</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802124.html" target="_blank">王佛松</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802121.html" target="_blank">王夔</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802115.html" target="_blank">吴奇</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802112.html" target="_blank">吴新涛</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802109.html" target="_blank">吴养洁</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802106.html" target="_blank">吴云东</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201512-t20151224_4502124.html" target="_blank">席振峰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201312-t20131219_4001993.html" target="_blank">谢毅</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802103.html" target="_blank">谢毓元</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201711-t20171129_4625054.html" target="_blank">谢在库</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201711-t20171129_4625055.html" target="_blank">谢作伟</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802097.html" target="_blank">徐如人</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201112-t20111213_3412361.html" target="_blank">严纯华</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802085.html" target="_blank">颜德岳</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201711-t20171129_4625056.html" target="_blank">杨万泰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201312-t20131219_4001997.html" target="_blank">杨秀荣</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201112-t20111213_3412362.html" target="_blank">杨学明</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802082.html" target="_blank">杨玉良</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802079.html" target="_blank">姚建年</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802076.html" target="_blank">姚守拙</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201512-t20151224_4502115.html" target="_blank">于吉红</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802070.html" target="_blank">余国琮</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802067.html" target="_blank">俞汝勤</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802061.html" target="_blank">袁权</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201711-t20171129_4625057.html" target="_blank">岳建民</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802058.html" target="_blank">张存浩</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201711-t20171129_4625058.html" target="_blank">张东辉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201312-t20131219_4001996.html" target="_blank">张洪杰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802055.html" target="_blank">张礼和</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201112-t20111213_3412363.html" target="_blank">张俐娜</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802049.html" target="_blank">张乾二</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201512-t20151224_4502122.html" target="_blank">张锁江</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201312-t20131219_4001995.html" target="_blank">张涛</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802046.html" target="_blank">张希</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802043.html" target="_blank">张玉奎</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802040.html" target="_blank">赵东元</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201112-t20111213_3412364.html" target="_blank">赵进才</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-201711-t20171129_4625059.html" target="_blank">赵宇亮</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802037.html" target="_blank">赵玉芬</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802034.html" target="_blank">郑兰荪</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802031.html" target="_blank">支志明</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802028.html" target="_blank">周其凤</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200912-t20091203_2681364.html" target="_blank">周其林</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802025.html" target="_blank">周同惠</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802019.html" target="_blank">朱道本</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802016.html" target="_blank">朱起鹤</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802013.html" target="_blank">朱清时</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/hxb-200906-t20090624_1802009.html" target="_blank">卓仁禧</a></span>
+
+
+
+                <dt>生命科学和医学学部<em>（150人）</em></dt>
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625060.html" target="_blank">卞修武</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803364.html" target="_blank">曹文宣</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201512-t20151224_4502240.html" target="_blank">曹晓风</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803361.html" target="_blank">常文瑞</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201512-t20151224_4502219.html" target="_blank">陈国强</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625061.html" target="_blank">陈化兰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803358.html" target="_blank">陈可冀</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803355.html" target="_blank">陈霖</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803352.html" target="_blank">陈润生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803349.html" target="_blank">陈文新</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803346.html" target="_blank">陈晓亚</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201512-t20151224_4502218.html" target="_blank">陈孝平</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625062.html" target="_blank">陈晔光</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803343.html" target="_blank">陈宜瑜</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803340.html" target="_blank">陈宜张</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201512-t20151224_4502217.html" target="_blank">陈义汉</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803337.html" target="_blank">陈竺</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803334.html" target="_blank">陈子元</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201312-t20131219_4002009.html" target="_blank">程和平</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803331.html" target="_blank">邓子新</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803328.html" target="_blank">段树民</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625064.html" target="_blank">樊嘉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803325.html" target="_blank">方精云</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803322.html" target="_blank">方荣祥</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201312-t20131219_4002012.html" target="_blank">高福</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201112-t20111213_3412370.html" target="_blank">葛均波</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625065.html" target="_blank">顾东风</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201312-t20131219_4002013.html" target="_blank">桂建芳</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803316.html" target="_blank">郭爱克</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201312-t20131219_4002010.html" target="_blank">韩斌</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803313.html" target="_blank">韩济生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201312-t20131219_4002011.html" target="_blank">韩家淮</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803310.html" target="_blank">韩启德</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803304.html" target="_blank">贺福初</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803301.html" target="_blank">贺林</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201312-t20131219_4002008.html" target="_blank">赫捷</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803298.html" target="_blank">洪德元</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803295.html" target="_blank">洪国藩</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200912-t20091203_2681372.html" target="_blank">侯凡凡</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625066.html" target="_blank">黄荷凤</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201112-t20111213_3412371.html" target="_blank">黄路生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625067.html" target="_blank">季维智</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625068.html" target="_blank">蒋华良</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803288.html" target="_blank">蒋有绪</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803285.html" target="_blank">金国章</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201312-t20131219_4002016.html" target="_blank">金力</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803282.html" target="_blank">鞠躬</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201112-t20111213_3412373.html" target="_blank">康乐</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803279.html" target="_blank">孔祥复</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803276.html" target="_blank">匡廷云</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803273.html" target="_blank">李朝义</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803270.html" target="_blank">李季伦</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803267.html" target="_blank">李家洋</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201112-t20111213_3412374.html" target="_blank">李林</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201512-t20151224_4502213.html" target="_blank">李蓬</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803264.html" target="_blank">李振声</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803261.html" target="_blank">梁栋材</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803258.html" target="_blank">梁智仁</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200912-t20091203_2681370.html" target="_blank">林鸿宣</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803255.html" target="_blank">林其谁</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803246.html" target="_blank">刘新垣</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625069.html" target="_blank">刘耀光</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803243.html" target="_blank">刘以训</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803240.html" target="_blank">刘允怡</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803234.html" target="_blank">卢永根</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625070.html" target="_blank">陆林</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803231.html" target="_blank">陆士新</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803228.html" target="_blank">毛江森</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803225.html" target="_blank">孟安明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803222.html" target="_blank">裴钢</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803219.html" target="_blank">戚正武</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803216.html" target="_blank">强伯勤</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803210.html" target="_blank">饶子和</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200912-t20091203_2681368.html" target="_blank">尚永丰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201512-t20151224_4502220.html" target="_blank">邵峰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803207.html" target="_blank">沈善炯</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803204.html" target="_blank">沈岩</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803201.html" target="_blank">沈允钢</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803198.html" target="_blank">沈自尹</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803195.html" target="_blank">施教耐</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201312-t20131219_4002014.html" target="_blank">施一公</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803189.html" target="_blank">施蕴渝</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803186.html" target="_blank">石元春</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201112-t20111213_3412375.html" target="_blank">舒红兵</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201512-t20151224_4502214.html" target="_blank">宋微波</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803183.html" target="_blank">苏国辉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200912-t20091203_2681375.html" target="_blank">隋森芳</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803180.html" target="_blank">孙大业</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803177.html" target="_blank">孙汉董</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803174.html" target="_blank">孙曼霁</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803171.html" target="_blank">孙儒泳</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803168.html" target="_blank">唐崇惕</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803165.html" target="_blank">唐守正</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803162.html" target="_blank">田波</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803159.html" target="_blank">童坦君</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803156.html" target="_blank">汪忠镐</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803153.html" target="_blank">王大成</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803150.html" target="_blank">王恩多</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201512-t20151224_4502210.html" target="_blank">王福生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803143.html" target="_blank">王文采</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803139.html" target="_blank">王正敏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803136.html" target="_blank">王志新</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803131.html" target="_blank">王志珍</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625071.html" target="_blank">魏辅文</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803129.html" target="_blank">魏江春</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803124.html" target="_blank">魏于全</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803120.html" target="_blank">吴常信</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803109.html" target="_blank">吴孟超</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803099.html" target="_blank">吴祖泽</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803095.html" target="_blank">武维华</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803091.html" target="_blank">谢华安</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803088.html" target="_blank">谢联辉</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201512-t20151224_4502238.html" target="_blank">徐国良</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625072.html" target="_blank">徐涛</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803084.html" target="_blank">许智宏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201512-t20151224_4502590.html" target="_blank">阎锡蕴</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803074.html" target="_blank">杨福愉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803069.html" target="_blank">杨焕明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803067.html" target="_blank">杨雄里</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803064.html" target="_blank">姚开泰</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803062.html" target="_blank">叶玉如</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803059.html" target="_blank">尹文英</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803057.html" target="_blank">印象初</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803054.html" target="_blank">曾益新</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803052.html" target="_blank">曾毅</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803049.html" target="_blank">翟中和</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803047.html" target="_blank">张春霆</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201112-t20111213_3412376.html" target="_blank">张明杰</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803041.html" target="_blank">张启发</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803036.html" target="_blank">张新时</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201512-t20151224_4502216.html" target="_blank">张旭</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201112-t20111213_3412377.html" target="_blank">张学敏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803034.html" target="_blank">张亚平</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803031.html" target="_blank">张永莲</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803028.html" target="_blank">张友尚</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803023.html" target="_blank">赵国屏</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201312-t20131219_4002015.html" target="_blank">赵继宗</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803021.html" target="_blank">赵进东</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201112-t20111213_3412378.html" target="_blank">赵玉沛</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803018.html" target="_blank">郑光美</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803013.html" target="_blank">郑儒永</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803010.html" target="_blank">郑守仪</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201711-t20171129_4625063.html" target="_blank">种康</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803007.html" target="_blank">周俊</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201512-t20151224_4502236.html" target="_blank">周琪</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-201112-t20111213_3412379.html" target="_blank">朱玉贤</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803005.html" target="_blank">朱兆良</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803002.html" target="_blank">朱作言</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200906-t20090624_1803000.html" target="_blank">庄巧生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/smkxhyxxb-200912-t20091203_2681367.html" target="_blank">庄文颖</a></span>
+
+
+
+                <dt>地学部<em>（132人）</em></dt>
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804511.html" target="_blank">安芷生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804507.html" target="_blank">常印佛</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804504.html" target="_blank">巢纪平</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201512-t20151224_4502645.html" target="_blank">陈大可</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201512-t20151224_4502647.html" target="_blank">陈发虎</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804500.html" target="_blank">陈俊勇</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201312-t20131219_4002024.html" target="_blank">陈骏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201512-t20151224_4502649.html" target="_blank">陈晓非</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804493.html" target="_blank">陈旭</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804489.html" target="_blank">陈颙</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804486.html" target="_blank">陈运泰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804482.html" target="_blank">程国栋</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804478.html" target="_blank">丑纪范</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201312-t20131219_4002020.html" target="_blank">崔鹏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804475.html" target="_blank">戴金星</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201711-t20171129_4625085.html" target="_blank">戴民汉</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804471.html" target="_blank">邓起东</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804468.html" target="_blank">丁国瑜</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201711-t20171129_4625076.html" target="_blank">丁林</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804464.html" target="_blank">丁仲礼</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201711-t20171129_4625083.html" target="_blank">窦贤康</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804457.html" target="_blank">冯士筰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804453.html" target="_blank">符淙斌</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201112-t20111213_3412380.html" target="_blank">傅伯杰</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804446.html" target="_blank">高俊</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201512-t20151224_4502652.html" target="_blank">高锐</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201112-t20111213_3412382.html" target="_blank">龚健雅</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201112-t20111213_3412383.html" target="_blank">郭华东</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201312-t20131219_4002021.html" target="_blank">郭正堂</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201512-t20151224_4502650.html" target="_blank">郝芳</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201711-t20171129_4625081.html" target="_blank">侯增谦</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804431.html" target="_blank">胡敦欣</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804428.html" target="_blank">黄荣辉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804424.html" target="_blank">贾承造</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201112-t20111213_3412384.html" target="_blank">焦念志</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804420.html" target="_blank">金振民</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201312-t20131219_4002023.html" target="_blank">金之钧</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804417.html" target="_blank">李崇银</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804413.html" target="_blank">李德仁</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804410.html" target="_blank">李德生</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804406.html" target="_blank">李吉均</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804402.html" target="_blank">李曙光</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804399.html" target="_blank">李廷栋</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804389.html" target="_blank">林学钰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804385.html" target="_blank">刘宝珺</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804382.html" target="_blank">刘昌明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201112-t20111213_3412385.html" target="_blank">刘丛强</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804378.html" target="_blank">刘光鼎</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804375.html" target="_blank">刘嘉麒</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804367.html" target="_blank">陆大道</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804364.html" target="_blank">吕达仁</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804360.html" target="_blank">马瑾</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804353.html" target="_blank">马宗晋</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200912-t20091203_2681384.html" target="_blank">莫宣学</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804349.html" target="_blank">穆穆</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804346.html" target="_blank">欧阳自远</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201711-t20171129_4625084.html" target="_blank">潘永信</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201312-t20131219_4002019.html" target="_blank">彭平安</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804342.html" target="_blank">秦大河</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804335.html" target="_blank">邱占祥</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804331.html" target="_blank">任纪舜</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804328.html" target="_blank">戎嘉余</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201711-t20171129_4625079.html" target="_blank">邵明安</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804324.html" target="_blank">沈其韩</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201512-t20151224_4502637.html" target="_blank">沈树忠</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201112-t20111213_3412386.html" target="_blank">石广玉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804317.html" target="_blank">石耀霖</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201112-t20111213_3412387.html" target="_blank">舒德干</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804313.html" target="_blank">苏纪兰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804309.html" target="_blank">孙鸿烈</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804306.html" target="_blank">孙枢</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200912-t20091203_2681386.html" target="_blank">陶澍</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804300.html" target="_blank">滕吉文</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804294.html" target="_blank">童庆禧</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804290.html" target="_blank">涂传诒</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201112-t20111213_3412388.html" target="_blank">万卫星</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804287.html" target="_blank">汪集旸</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804283.html" target="_blank">汪品先</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201312-t20131219_4002028.html" target="_blank">王成善</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804279.html" target="_blank">王德滋</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201312-t20131219_4002027.html" target="_blank">王会军</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804271.html" target="_blank">王水</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804267.html" target="_blank">王铁冠</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804263.html" target="_blank">王颖</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804259.html" target="_blank">魏奉思</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804256.html" target="_blank">文圣常</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201512-t20151224_4502635.html" target="_blank">吴福元</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804252.html" target="_blank">吴国雄</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201312-t20131219_4002026.html" target="_blank">吴立新</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804248.html" target="_blank">吴新智</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804245.html" target="_blank">伍荣生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201512-t20151224_4502651.html" target="_blank">夏军</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804241.html" target="_blank">肖序常</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804234.html" target="_blank">徐冠华</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201711-t20171129_4625082.html" target="_blank">徐义刚</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804227.html" target="_blank">许厚泽</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804223.html" target="_blank">许志琴</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804219.html" target="_blank">薛禹群</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201711-t20171129_4625078.html" target="_blank">杨经绥</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201512-t20151224_4502630.html" target="_blank">杨树锋</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804211.html" target="_blank">杨文采</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804208.html" target="_blank">杨元喜</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804199.html" target="_blank">姚檀栋</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804196.html" target="_blank">姚振兴</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804192.html" target="_blank">叶大年</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804185.html" target="_blank">叶嘉安</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804181.html" target="_blank">殷鸿福</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804178.html" target="_blank">於崇文</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804174.html" target="_blank">袁道先</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804170.html" target="_blank">曾庆存</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804167.html" target="_blank">曾融生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200912-t20091203_2681388.html" target="_blank">翟明国</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804163.html" target="_blank">翟裕生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804156.html" target="_blank">张国伟</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201711-t20171129_4625077.html" target="_blank">张宏福</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804152.html" target="_blank">张经</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804149.html" target="_blank">张弥曼</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201312-t20131219_4002025.html" target="_blank">张培震</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201512-t20151224_4502643.html" target="_blank">张人禾</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804138.html" target="_blank">赵柏林</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804134.html" target="_blank">赵鹏大</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804130.html" target="_blank">赵其国</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804127.html" target="_blank">郑度</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200912-t20091203_2681382.html" target="_blank">郑永飞</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804123.html" target="_blank">钟大赉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201312-t20131219_4002022.html" target="_blank">周成虎</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200912-t20091203_2681377.html" target="_blank">周卫健</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804119.html" target="_blank">周秀骥</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804116.html" target="_blank">周志炎</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201112-t20111213_3412389.html" target="_blank">周忠和</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-200906-t20090624_1804111.html" target="_blank">朱日祥</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/dxb-201711-t20171129_4625080.html" target="_blank">邹才能</a></span>
+
+
+
+                <dt>信息技术科学部<em>（95人）</em></dt>
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807840.html" target="_blank">包为民</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807838.html" target="_blank">保铮</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200912-t20091203_2681396.html" target="_blank">陈定昌</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807836.html" target="_blank">陈桂林</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807834.html" target="_blank">陈国良</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807832.html" target="_blank">陈翰馥</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807830.html" target="_blank">陈俊亮</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807828.html" target="_blank">陈星弼</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807826.html" target="_blank">陈星旦</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807824.html" target="_blank">褚君浩</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807822.html" target="_blank">戴汝为</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807820.html" target="_blank">董韫美</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201512-t20151224_4502658.html" target="_blank">房建成</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807816.html" target="_blank">干福熹</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201312-t20131219_4002031.html" target="_blank">龚旗煌</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201512-t20151224_4502668.html" target="_blank">顾瑛</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201711-t20171129_4625087.html" target="_blank">管晓宏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807812.html" target="_blank">郭光灿</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807810.html" target="_blank">郭雷</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201312-t20131219_4002032.html" target="_blank">郝跃</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807808.html" target="_blank">何积丰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807806.html" target="_blank">侯朝焕</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807804.html" target="_blank">侯洵</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200912-t20091203_2681394.html" target="_blank">怀进鹏</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807803.html" target="_blank">黄宏嘉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807801.html" target="_blank">黄琳</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807799.html" target="_blank">黄民强</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201512-t20151224_4502669.html" target="_blank">黄如</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201112-t20111213_3412390.html" target="_blank">黄维</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807795.html" target="_blank">简水生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201512-t20151224_4502660.html" target="_blank">姜杰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201112-t20111213_3412391.html" target="_blank">金亚秋</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807793.html" target="_blank">匡定波</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807791.html" target="_blank">雷啸霖</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807789.html" target="_blank">李启虎</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201112-t20111213_3412392.html" target="_blank">李树深</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807786.html" target="_blank">李未</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807784.html" target="_blank">李衍达</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807779.html" target="_blank">林惠民</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807775.html" target="_blank">林尊琪</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200912-t20091203_2681390.html" target="_blank">刘国治</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201512-t20151224_4502655.html" target="_blank">刘明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807773.html" target="_blank">刘盛纲</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807771.html" target="_blank">刘颂豪</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807769.html" target="_blank">刘永坦</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201512-t20151224_4502657.html" target="_blank">陆建华</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807767.html" target="_blank">陆汝钤</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807765.html" target="_blank">陆元九</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201312-t20131219_4002033.html" target="_blank">吕建</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201711-t20171129_4625088.html" target="_blank">毛军发</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201112-t20111213_3412393.html" target="_blank">梅宏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807759.html" target="_blank">彭堃墀</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807757.html" target="_blank">秦国刚</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807753.html" target="_blank">沈绪榜</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807751.html" target="_blank">宋健</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201312-t20131219_4002030.html" target="_blank">谭铁牛</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807745.html" target="_blank">王家骐</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201711-t20171129_4625089.html" target="_blank">王建宇</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201312-t20131219_4002036.html" target="_blank">王立军</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807743.html" target="_blank">王启明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201312-t20131219_4002035.html" target="_blank">王巍</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807737.html" target="_blank">王圩</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807734.html" target="_blank">王阳元</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201512-t20151224_4502653.html" target="_blank">王永良</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807732.html" target="_blank">王育竹</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807730.html" target="_blank">王越</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807728.html" target="_blank">王占国</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807726.html" target="_blank">王之江</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201711-t20171129_4625090.html" target="_blank">吴朝晖</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807724.html" target="_blank">吴德馨</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807722.html" target="_blank">吴宏鑫</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807720.html" target="_blank">吴培亨</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807718.html" target="_blank">吴一戎</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807715.html" target="_blank">夏建白</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201112-t20111213_3412394.html" target="_blank">徐宗本</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200912-t20091203_2681392.html" target="_blank">许宁生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807709.html" target="_blank">薛永祺</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201711-t20171129_4625091.html" target="_blank">杨德仁</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807706.html" target="_blank">杨芙清</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201112-t20111213_3412395.html" target="_blank">杨学军</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807703.html" target="_blank">姚建铨</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1808808.html" target="_blank">姚期智</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201312-t20131219_4002034.html" target="_blank">尹浩</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807697.html" target="_blank">张钹</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807694.html" target="_blank">张景中</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807691.html" target="_blank">张嗣瀛</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201112-t20111213_3412396.html" target="_blank">郑建华</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807683.html" target="_blank">郑耀宗</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807680.html" target="_blank">郑有炓</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201711-t20171129_4625092.html" target="_blank">郑志明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807677.html" target="_blank">周炳琨</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807674.html" target="_blank">周巢尘</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807670.html" target="_blank">周兴铭</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-201512-t20151224_4502666.html" target="_blank">周志鑫</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/xxjskxb-200906-t20090624_1807667.html" target="_blank">朱中梁</a></span>
+
+
+
+                <dt>技术科学部<em>（141人）</em></dt>
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808407.html" target="_blank">蔡其巩</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808401.html" target="_blank">曹楚南</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808399.html" target="_blank">曹春晓</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201512-t20151224_4502695.html" target="_blank">常青</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808396.html" target="_blank">陈创天</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201512-t20151224_4502689.html" target="_blank">陈维江</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201512-t20151224_4502688.html" target="_blank">陈云敏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808386.html" target="_blank">陈祖煜</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201312-t20131219_4002049.html" target="_blank">成会明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808383.html" target="_blank">程耿东</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808381.html" target="_blank">程时杰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201312-t20131219_4002051.html" target="_blank">丁汉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808378.html" target="_blank">都有为</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201711-t20171129_4625095.html" target="_blank">段文晖</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808375.html" target="_blank">范守善</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201312-t20131219_4002050.html" target="_blank">方岱宁</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201312-t20131219_4002043.html" target="_blank">高德利</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808373.html" target="_blank">高镇同</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808370.html" target="_blank">葛昌纯</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808367.html" target="_blank">顾秉林</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808364.html" target="_blank">顾诵芬</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808361.html" target="_blank">顾逸东</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201711-t20171129_4625096.html" target="_blank">郭烈锦</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201711-t20171129_4625097.html" target="_blank">郭万林</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808359.html" target="_blank">过增元</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201512-t20151224_4502696.html" target="_blank">韩杰才</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808356.html" target="_blank">韩祯祥</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201312-t20131219_4002045.html" target="_blank">何满潮</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201512-t20151224_4502681.html" target="_blank">何雅玲</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808351.html" target="_blank">胡海岩</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808348.html" target="_blank">胡文瑞</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808346.html" target="_blank">胡聿贤</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808343.html" target="_blank">黄克智</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808341.html" target="_blank">姜中宏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201312-t20131219_4002044.html" target="_blank">金红光</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808335.html" target="_blank">金展鹏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201112-t20111213_3412398.html" target="_blank">赖远明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808330.html" target="_blank">李济生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808325.html" target="_blank">李述汤</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808322.html" target="_blank">李天</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808320.html" target="_blank">李依依</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201312-t20131219_4002047.html" target="_blank">李应红</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808313.html" target="_blank">林皋</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808310.html" target="_blank">刘宝镛</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201711-t20171129_4625098.html" target="_blank">刘昌胜</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808308.html" target="_blank">刘广均</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201312-t20131219_4002048.html" target="_blank">刘维民</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200912-t20091203_2681411.html" target="_blank">刘竹生</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808305.html" target="_blank">柳百新</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808302.html" target="_blank">卢柯</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808300.html" target="_blank">卢强</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808297.html" target="_blank">路甬祥</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201112-t20111213_3412405.html" target="_blank">雒建斌</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808295.html" target="_blank">闵桂荣</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201112-t20111213_3412399.html" target="_blank">南策文</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201512-t20151224_4502694.html" target="_blank">倪晋仁</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201711-t20171129_4625100.html" target="_blank">欧阳明高</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808292.html" target="_blank">欧阳予</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808290.html" target="_blank">潘际銮</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808284.html" target="_blank">彭一刚</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808282.html" target="_blank">齐康</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808279.html" target="_blank">邱大洪</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201312-t20131219_4002046.html" target="_blank">邱勇</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808277.html" target="_blank">任露泉</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201711-t20171129_4625101.html" target="_blank">芮筱亭</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200912-t20091203_2681410.html" target="_blank">申长雨</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201112-t20111213_3412400.html" target="_blank">沈保根</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808270.html" target="_blank">沈志云</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808266.html" target="_blank">宋家树</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808264.html" target="_blank">宋玉泉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808262.html" target="_blank">宋振骐</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808260.html" target="_blank">孙家栋</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808258.html" target="_blank">孙钧</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808256.html" target="_blank">唐叔贤</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808253.html" target="_blank">陶文铨</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201711-t20171129_4625102.html" target="_blank">滕锦光</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201711-t20171129_4625103.html" target="_blank">田永君</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808248.html" target="_blank">汪耕</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201512-t20151224_4502683.html" target="_blank">汪卫华</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808246.html" target="_blank">王补宣</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808243.html" target="_blank">王崇愚</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808241.html" target="_blank">王大中</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808238.html" target="_blank">王淀佐</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200912-t20091203_2681406.html" target="_blank">王光谦</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808233.html" target="_blank">王立鼎</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808230.html" target="_blank">王希季</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200912-t20091203_2681408.html" target="_blank">王锡凡</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200912-t20091203_2681402.html" target="_blank">王曦</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200912-t20091203_2681407.html" target="_blank">王自强</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201112-t20111213_3412401.html" target="_blank">魏炳波</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201711-t20171129_4625104.html" target="_blank">魏悦广</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808225.html" target="_blank">温诗铸</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808223.html" target="_blank">闻邦椿</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808220.html" target="_blank">吴承康</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808217.html" target="_blank">吴良镛</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808215.html" target="_blank">吴硕贤</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808212.html" target="_blank">伍小平</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808204.html" target="_blank">邢球痕</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808202.html" target="_blank">熊有伦</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808197.html" target="_blank">徐建中</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808195.html" target="_blank">徐性初</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201512-t20151224_4502691.html" target="_blank">宣益民</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808188.html" target="_blank">薛其坤</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201512-t20151224_4502678.html" target="_blank">闫楚良</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808185.html" target="_blank">严陆光</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201711-t20171129_4625105.html" target="_blank">杨孟飞</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808180.html" target="_blank">杨叔子</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201711-t20171129_4625106.html" target="_blank">杨伟</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808178.html" target="_blank">杨卫</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808176.html" target="_blank">杨槱</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808173.html" target="_blank">姚熹</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808170.html" target="_blank">叶恒强</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808168.html" target="_blank">叶培建</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200912-t20091203_2681397.html" target="_blank">于起峰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808165.html" target="_blank">余梦伦</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201512-t20151224_4502690.html" target="_blank">俞大鹏</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808163.html" target="_blank">俞鸿儒</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201112-t20111213_3412397.html" target="_blank">翟婉明</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808160.html" target="_blank">张楚汉</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201711-t20171129_4625107.html" target="_blank">张清杰</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201112-t20111213_3412402.html" target="_blank">张统一</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808155.html" target="_blank">张兴钤</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808152.html" target="_blank">张佑启</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808150.html" target="_blank">张泽</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808147.html" target="_blank">赵淳生</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201112-t20111213_3412403.html" target="_blank">郑平</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808142.html" target="_blank">郑时龄</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808140.html" target="_blank">郑哲敏</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808137.html" target="_blank">钟万勰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808129.html" target="_blank">周国治</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808124.html" target="_blank">周孝信</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808121.html" target="_blank">周尧和</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808119.html" target="_blank">周远</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201112-t20111213_3412404.html" target="_blank">朱荻</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808117.html" target="_blank">朱静</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808115.html" target="_blank">朱森元</a></span>
+
+                </dd>
+
+
+
+                <dd>
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808111.html" target="_blank">朱位秋</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808109.html" target="_blank">祝世宁</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808106.html" target="_blank">庄逢辰</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-200906-t20090624_1808103.html" target="_blank">邹世昌</a></span>
+
+
+
+                <span><a href="http://www.casad.cas.cn:80/aca/371/jskxb-201512-t20151224_4502682.html" target="_blank">邹志刚</a></span>
+
+
+
+
+            </dl>
+            <dl><dd style="background-color: #fff; text-align: right; padding-right:20px;"><b>（姓名按音序排列）</b></dd></dl>
+        </div>
+  </div>
+
+    <!--intrListBar end-->
+    <div class="clear" style="margin-bottom:10px;"></div>
+</div>
+<!--mainBar end-->
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<div class="footerBar">
+  <div class="content">
+        <dl class="footerNav">
+            <dt>导航</dt>
+            <dd><a href="http://www.casad.cas.cn/">首页</a></dd>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/294/index.html">学部介绍</a></dd>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/313/index.html">院士信息</a></dd>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/319/index.html">院士大会</a></dd>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/324/index.html" >院士增选</a></dd>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/328/index.html">智库建设</a></dd>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/404/index.html">出版物</a></dd>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/344/index.html">学部工作局</a></dd>
+        </dl>
+        <dl class="footerDyn">
+            <dt>动态</dt>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/350/index.html">学部动态</a></dd>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/355/index.html">媒体报道</a></dd>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/331/index.html">咨询评议</a></dd>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/353/index.html">学术交流</a></dd>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/340/index.html">科普活动</a></dd>
+            <dd><a href="http://www.casad.cas.cn:80/chnl/351/index.html">院士动态</a></dd>
+        </dl>
+        <dl class="footerSpecial">
+            <dt>专题</dt>
+
+              <dd><a href="http://www.casad.cas.cn:80/chnl/403/index.html" target="_blank">2017中科院院士增选</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/chnl/368/index.html" target="_blank">陈嘉庚科学奖</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/chnl/402/index.html" target="_blank">科学与中国</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/chnl/447/index.html" target="_blank">学术引领</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/chnl/448/index.html" target="_blank">科学人生·百年</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/chnl/369/index.html" target="_blank">院士文库</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/chnl/362/index.html" target="_blank">缅怀院士</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/chnl/413/index.html" target="_blank">中科院第十八次院士大会</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/chnl/359/index.html" target="_blank">纪念学部成立60周年</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/chnl/439/index.html" target="_blank">院士口述故事</a></dd>
+
+        </dl>
+        <dl class="footerTool">
+            <dt>工具栏</dt>
+
+              <dd><a href="http://www.casad.cas.cn:80/doc/14932.html" target="_blank">院士邮箱系统</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/doc/14933.html" target="_blank">院士增选系统</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/doc/14935.html" target="_blank">学部咨询项目管理系统</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/doc/17196.html" target="_blank">学部学科项目管理系统</a></dd>
+
+              <dd><a href="http://www.casad.cas.cn:80/doc/14934.html" target="_blank">学部局综合办公平台</a></dd>
+
+        </dl>
+        <dl class="footerLink">
+            <dt>友情链接</dt>
+
+              <dd style="width: 210px;"><a href="http://www.casad.cas.cn:80/doc/16055.html" target="_blank">中华人民共和国科学技术部</a></dd>
+
+              <dd style="width: 210px;"><a href="http://www.casad.cas.cn:80/doc/14937.html" target="_blank">国家自然科学基金委员会</a></dd>
+
+              <dd style="width: 210px;"><a href="http://www.casad.cas.cn:80/doc/14938.html" target="_blank">中国工程院</a></dd>
+
+              <dd style="width: 210px;"><a href="http://www.casad.cas.cn:80/doc/14936.html" target="_blank">中国科学技术协会</a></dd>
+
+              <dd style="width: 210px;"><a href="http://www.casad.cas.cn:80/doc/14966.html" target="_blank">英国皇家学会</a></dd>
+
+              <dd style="width: 210px;"><a href="http://www.casad.cas.cn:80/doc/14967.html" target="_blank">美国科学院</a></dd>
+
+              <dd style="width: 210px;"><a href="http://www.casad.cas.cn:80/doc/14968.html" target="_blank">法国科学院</a></dd>
+
+        </dl>
+    </div>
+    <div style="text-align: center;">
+        <div>
+        <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/33/000/0000/40672376/CA330000000406723760002.js' type='text/javascript'%3E%3C/script%3E"));</script>
+        </div>
+        <div class="copyright" style="text-align: center; padding-bottom:10px;"><span>&copy;</span> 1996 - <script type="text/javascript">document.write(new Date().getFullYear());</script>  中国科学院 版权所有 京ICP备05002857号     京公网安备110402500047号</div>
+        </div>
+</div>
+<!--footerBar end-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?141d1d902a441a529f2409bd8abe53ef";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script type="text/javascript">
+//字号大小调整
+function doZoom(size){
+document.getElementById('zoom').style.fontSize=size+'px';
+}
+</script>
+</body>
+</html>
+
+
+Process finished with exit code 0
